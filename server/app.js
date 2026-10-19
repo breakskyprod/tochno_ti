@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 //  Замените на ваши данные!
 // ============================================================
 const GITHUB_USER = 'breakskyprod'; // ваш ник на GitHub
-const GITHUB_REPO = 'digital-safety'; // имя репозитория
+const GITHUB_REPO = 'tochno_ti'; // имя репозитория
 const GITHUB_TAG  = 'videos'; // тег, который вы создали в Releases
 
 function getGithubUrl(filename) {
