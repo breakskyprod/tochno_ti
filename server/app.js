@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 // ============================================================
 const GITHUB_USER = 'breakskyprod'; // ваш ник на GitHub
 const GITHUB_REPO = 'tochno_ti'; // имя репозитория
-const GITHUB_TAG  = 'videos'; // тег, который вы создали в Releases
+const GITHUB_TAG  = '1'; // тег, который вы создали в Releases
 
 function getGithubUrl(filename) {
     return `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/releases/download/${GITHUB_TAG}/${filename}`;
