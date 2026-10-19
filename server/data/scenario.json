@@ -1,0 +1,86 @@
+{
+  "title": "Это точно ты?",
+  "scenes": [
+    {
+      "id": "s1_request",
+      "type": "start",
+      "video": "s1.mp4",
+      "pause_at": 45,
+      "choice_timeout": 10,
+      "choices": [
+        {
+          "id": "A",
+          "label": "Да, конечно. Передавай курьеру мой номер",
+          "area": { "x": 10, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s1_A.mp4" }
+        },
+        {
+          "id": "B",
+          "label": "А что именно привезут?",
+          "area": { "x": 55, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s1_B.mp4" }
+        }
+      ],
+      "no_choice": {
+        "after_choice": { "video": "s1_NC.mp4" }
+      },
+      "next": "s2_change"
+    },
+    {
+      "id": "s2_change",
+      "type": "ordinary",
+      "video": "s2.mp4",
+      "pause_at": 60,
+      "choice_timeout": 10,
+      "choices": [
+        {
+          "id": "A",
+          "label": "Хорошо, оставлю у себя",
+          "area": { "x": 10, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s2_A.mp4" }
+        },
+        {
+          "id": "B",
+          "label": "Стоп. А почему изменилось место?",
+          "area": { "x": 55, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s2_B.mp4" }
+        }
+      ],
+      "no_choice": {
+        "after_choice": { "video": "s2_NC.mp4" }
+      },
+      "next": "s3_call"
+    },
+    {
+      "id": "s3_call",
+      "type": "ordinary",
+      "video": "s3.mp4",
+      "pause_at": 90,
+      "choice_timeout": 10,
+      "choices": [
+        {
+          "id": "A",
+          "label": "Отнести коробку, как просили",
+          "area": { "x": 10, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s3_A.mp4" }
+        },
+        {
+          "id": "B",
+          "label": "Ничего не передавать и сообщить о ситуации",
+          "area": { "x": 55, "y": 55, "width": 35, "height": 22 },
+          "after_choice": { "video": "s3_B.mp4" }
+        }
+      ],
+      "no_choice": {
+        "after_choice": { "video": "s3_NC.mp4" }
+      },
+      "next": "s4_final"
+    },
+    {
+      "id": "s4_final",
+      "type": "final",
+      "video": "s4_final.mp4",
+      "next": null
+    }
+  ]
+}
